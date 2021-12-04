@@ -16,6 +16,17 @@ body {
   line-height: calc(16 / 14);
   text-transform: uppercase;
 }
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
 p {
   color: var(--sec-color);
 }
@@ -46,6 +57,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--main-color);
   padding: 6px 22px 6px 22px;
+  margin-right: 8px;
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -69,7 +81,10 @@ p {
   opacity: ;
   margin-top: -1px;
 }
-
+.box {
+  display: flex;
+  justify-content: center;
+}
 nav,
 .links,
 .contacts,
@@ -87,6 +102,8 @@ header {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--act-color);
+  margin-right: 93px;
+  margin-left: 215px;
 }
 .logo-color-black {
   color: var(--main-color);
