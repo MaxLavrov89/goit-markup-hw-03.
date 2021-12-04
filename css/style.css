@@ -7,14 +7,23 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
-.section h2 {
+.section > .team-title {
   font-size: 36px;
   line-height: 1.17;
 }
-.section-info {
+.section-text {
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
 }
 a {
   text-decoration: none;
@@ -27,63 +36,13 @@ button {
   border: none;
   cursor: pointer;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 p {
   color: var(--sec-color);
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.hero-button {
-  padding: 10px 32px 10px 32px;
-  font-size: 16px;
-  line-height: 1.88;
-  background: var(--act-color);
-  color: #ffffff;
-}
-.hero-button:hover {
-  background: #1c8be6;
-}
-.section-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  padding: 6px 22px 6px 22px;
-  margin-right: 8px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.section-button:hover {
-  color: #ffffff;
-  background: var(--act-color);
-}
-.section {
-  padding: 94px 0;
-}
-.container {
-  padding: 0 15px;
-  width: 1200px;
-  border: 1px solid red;
-  margin: 0 auto;
-}
-.hidden-elem {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: ;
-  margin-top: -1px;
-}
-.box {
-  display: flex;
-  justify-content: center;
 }
 nav,
 .links,
@@ -103,7 +62,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--act-color);
   margin-right: 93px;
-  margin-left: 215px;
+  margin-left: 0px;
 }
 .logo-color-black {
   color: var(--main-color);
@@ -146,9 +105,121 @@ header .logo {
   color: var(--sec-color);
 }
 .contacts li:first-child a {
-  margin-left: 0;
+  margin-left: auto;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  padding: 10px 32px 10px 32px;
+  font-size: 16px;
+  line-height: 1.88;
+  background: var(--act-color);
+  color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-button:hover {
+  background: #1c8be6;
+}
+.team-title {
+  font-style: bold;
+  text-align: center;
+  font-size: 36px;
+}
+
+.section-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  padding: 6px 22px 6px 22px;
+  margin-right: 8px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.section-button:hover {
+  color: #ffffff;
+  background: var(--act-color);
+}
+.section {
+  padding: 94px 0;
+  margin-top: 0px;
+}
+.section-info {
+  outline: 1px solid tomato;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+}
+.section-info > .section-item {
+  flex-basis: calc(100% / 4);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  width: 1200px;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hidden-elem {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: ;
+  margin-top: -1px;
+}
+.box {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-box {
+  display: flex;
+}
+.portfolio {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.card-thumb {
+  display: flex;
+}
+.portfolio > .card-images {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.card-images * {
+  outline: 1px solid green;
+}
+.card-content {
+  padding: 20px, 24px, 54px;
+}
+.card-text {
+  margin-top: 4px;
+}
+.card-heading > h2 {
+  font-style: bold;
+  font-size: 18px;
 }
 .contacts-footer li a {
+  display: flex;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
