@@ -32,7 +32,7 @@ button {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: auto;
 }
 p {
   color: var(--sec-color);
@@ -288,4 +288,13 @@ header > .container {
 }
 .adress > p {
   color: #ffffff;
+}
+.sprite-icon  {
+  width: 20px;
+  height: 20px;
+  fill: #303030;
+  display: inline-flex;
+ 
+  
+  
 }
